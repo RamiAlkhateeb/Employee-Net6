@@ -18,16 +18,16 @@ using System.Security.Claims;
 
 namespace Employees.Common.Repositories
 {
-    public class EmployeeRepository : IEmployeesRepository
+    public class EmployeesRepository : IEmployeesRepository
     {
         private readonly EmployeesDbContext _employeesDbContext;
-        private readonly ILogger<EmployeeRepository> _logger;
+        private readonly ILogger<EmployeesRepository> _logger;
         private readonly AppSettings _appSettings;
         private readonly IMapper _mapper;
 
-        public EmployeeRepository(EmployeesDbContext employeesDbContext, 
+        public EmployeesRepository(EmployeesDbContext employeesDbContext, 
             IMapper mapper,
-            ILogger<EmployeeRepository> logger,
+            ILogger<EmployeesRepository> logger,
             IOptions<AppSettings> appSettings)
         {
             _employeesDbContext = employeesDbContext;
