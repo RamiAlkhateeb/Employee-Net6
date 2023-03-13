@@ -10,3 +10,15 @@ C:\Work\Employees\Employees.Common\obj\Debug\net6.0\Employees.Common.dll
 C:\Work\Employees\Employees.Common\obj\Debug\net6.0\refint\Employees.Common.dll
 C:\Work\Employees\Employees.Common\obj\Debug\net6.0\Employees.Common.pdb
 C:\Work\Employees\Employees.Common\obj\Debug\net6.0\ref\Employees.Common.dll
+C:\Work\Employee-Net6\Employees.Common\bin\Debug\net6.0\Employees.Common.deps.json
+C:\Work\Employee-Net6\Employees.Common\bin\Debug\net6.0\Employees.Common.dll
+C:\Work\Employee-Net6\Employees.Common\bin\Debug\net6.0\Employees.Common.pdb
+C:\Work\Employee-Net6\Employees.Common\obj\Debug\net6.0\Employees.Common.csproj.AssemblyReference.cache
+C:\Work\Employee-Net6\Employees.Common\obj\Debug\net6.0\Employees.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\Employee-Net6\Employees.Common\obj\Debug\net6.0\Employees.Common.AssemblyInfoInputs.cache
+C:\Work\Employee-Net6\Employees.Common\obj\Debug\net6.0\Employees.Common.AssemblyInfo.cs
+C:\Work\Employee-Net6\Employees.Common\obj\Debug\net6.0\Employees.Common.csproj.CoreCompileInputs.cache
+C:\Work\Employee-Net6\Employees.Common\obj\Debug\net6.0\Employees.Common.dll
+C:\Work\Employee-Net6\Employees.Common\obj\Debug\net6.0\refint\Employees.Common.dll
+C:\Work\Employee-Net6\Employees.Common\obj\Debug\net6.0\Employees.Common.pdb
+C:\Work\Employee-Net6\Employees.Common\obj\Debug\net6.0\ref\Employees.Common.dll

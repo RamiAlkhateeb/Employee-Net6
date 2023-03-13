@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Employees.Common.Models.Requests;
 using Employees.Common.Repositories;
+using Employees.Common.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,20 +12,20 @@ namespace Employees.Api.Controllers
     [ApiController]
     public class EmployeesController : ControllerBase
     {
-        private readonly IEmployeesRepository _employeeRepository;
+        private readonly IEmployeesService _employeesService;
         private IMapper _mapper;
 
-        public EmployeesController(IEmployeesRepository employeeRepository,
+        public EmployeesController(IEmployeesService employeesService,
             IMapper mapper)
         {
-            _employeeRepository = employeeRepository;
+            _employeesService = employeesService;
             _mapper = mapper;
         }
         // GET: api/Employees
         [HttpGet]
         public async Task<IActionResult> GetAllEmployees()
         {
-            var users = await _employeeRepository.GetAllEmployees();
+            var users = await _employeesService.GetAllEmployees();
             return Ok(users);
         }
 
@@ -32,7 +33,7 @@ namespace Employees.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateEmployee(EmployeeRequest employeeRequest)
         {
-            var employee =await _employeeRepository.CreateEmployee(employeeRequest);
+            var employee =await _employeesService.CreateEmployee(employeeRequest);
             return Ok(employee);
         }
 
@@ -41,7 +42,7 @@ namespace Employees.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetEmployeeById(int id)
         {
-            var foundEmployee = await _employeeRepository.GetEmployeeById(id);
+            var foundEmployee = await _employeesService.GetEmployeeById(id);
             
             return Ok(foundEmployee);
         }
@@ -50,7 +51,7 @@ namespace Employees.Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateEmployee(int id, [FromBody] EmployeeRequest employeeRequest)
         {
-            var employee = await _employeeRepository.UpdateEmployee(id, employeeRequest);
+            var employee = await _employeesService.UpdateEmployee(id, employeeRequest);
             
             return Ok(employee);
         }
@@ -59,7 +60,7 @@ namespace Employees.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteEmployee(int id)
         {
-            var employee = await _employeeRepository.DeleteEmployee(id);
+            var employee = await _employeesService.DeleteEmployee(id);
             
             return Ok(employee);
         }
@@ -67,12 +68,23 @@ namespace Employees.Api.Controllers
         [HttpPost("authenticate")]
         public async Task<ActionResult> Authenticate(AuthenticateRequest model)
         {
-            var response =  _employeeRepository.Authenticate(model).Result;
+            var response = _employeesService.Authenticate(model).Result;
 
             if (response == null)
                 return BadRequest(new { message = "Username or password is incorrect" });
 
             return Ok(response);
+        }
+
+        [HttpPost("productoffers")]
+        public async Task<ActionResult> GetOffers()
+        {
+            List<string> offers = new List<string>();
+            offers.Add("20% Off on IPhone 12");
+            offers.Add("15% Off on HP Pavillion");
+            offers.Add("25% Off on Samsung Smart TV");
+            await _employeesService.SendOffersToAll(offers);
+            return Ok("Offers sent successfully to all users!");
         }
     }
 }

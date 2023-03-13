@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Work\\Employees\\Employees.Common\\Employees.Common.csproj": {}
+    "C:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj": {}
   },
   "projects": {
-    "C:\\Work\\Employees\\Employees.Common\\Employees.Common.csproj": {
+    "C:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\Employees\\Employees.Common\\Employees.Common.csproj",
+        "projectUniqueName": "C:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj",
         "projectName": "Employees.Common",
-        "projectPath": "C:\\Work\\Employees\\Employees.Common\\Employees.Common.csproj",
+        "projectPath": "C:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj",
         "packagesPath": "C:\\Users\\RamiAlkhateeb(TechUn\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\Employees\\Employees.Common\\obj\\",
+        "outputPath": "C:\\Work\\Employee-Net6\\Employees.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RamiAlkhateeb(TechUn\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,6 +63,10 @@
             "Microsoft.AspNetCore.Mvc.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[6.0.11, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

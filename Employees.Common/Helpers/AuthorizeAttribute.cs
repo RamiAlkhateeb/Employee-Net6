@@ -12,7 +12,7 @@ namespace Employees.Common.Helpers
     {
         public void OnAuthorization(AuthorizationFilterContext context)
         {
-            var user = (Employee)context.HttpContext.Items["Employee"];
+            var user = (Employee)context.HttpContext.Items["User"];
             if (user == null)
             {
                 // not logged in
