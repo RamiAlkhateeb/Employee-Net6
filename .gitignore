@@ -1,0 +1,15 @@
+
+
+# Visual Studio and build folders
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

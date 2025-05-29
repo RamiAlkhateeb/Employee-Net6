@@ -1,5 +1,7 @@
 # Employees-.NETCore
 
+This is upgraded from .NET 6 to .NET 9
+
 As part of your technical assessment, you are requested to submit a working web application for a
 Simple Employee CRUD solution:
 1. Frontend (using Angular 13+)

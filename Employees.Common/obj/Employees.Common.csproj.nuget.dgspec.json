@@ -1,32 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj": {}
+    "D:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj": {}
   },
   "projects": {
-    "C:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj": {
+    "D:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj",
+        "projectUniqueName": "D:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj",
         "projectName": "Employees.Common",
-        "projectPath": "C:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj",
-        "packagesPath": "C:\\Users\\RamiAlkhateeb(TechUn\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\Employee-Net6\\Employees.Common\\obj\\",
+        "projectPath": "D:\\Work\\Employee-Net6\\Employees.Common\\Employees.Common.csproj",
+        "packagesPath": "C:\\Users\\rami_\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\Employee-Net6\\Employees.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\RamiAlkhateeb(TechUn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rami_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net9.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -34,15 +38,21 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[12.0.0, )"
+              "version": "[14.0.0, )"
             },
             "BCrypt.Net-Next": {
               "target": "Package",
@@ -50,39 +60,51 @@
             },
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
-              "version": "[5.2.9, )"
+              "version": "[5.3.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[9.0.5, )"
             },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[2.3.0, )"
             },
             "Microsoft.AspNetCore.Mvc.Abstractions": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[2.3.0, )"
             },
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
-              "version": "[6.0.11, )"
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[9.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[9.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[8.1.2, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[6.25.0, )"
+              "version": "[8.11.0, )"
             }
           },
           "imports": [
@@ -101,7 +123,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
