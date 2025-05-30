@@ -1,4 +1,4 @@
-# Employees-.NETCore
+# Employees CRUD Web API with SignalR and Auth
 
 This is upgraded from .NET 6 to .NET 9
 
